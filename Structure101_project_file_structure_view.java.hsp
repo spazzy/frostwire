@@ -1,0 +1,3199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local-project language="java" version="5.0.15111" xml-version="3" flavor="j2se">
+  <property name="show-as-module" value="true" />
+  <property name="publish-architecture-artifacts" value="true" />
+  <property name="force-classpath" value="false" />
+  <property name="project-type" value="classpath" />
+  <property name="hide-externals" value="true" />
+  <property name="parse-archive-in-archive" value="false" />
+  <property name="include-injected-dependency" value="false" />
+  <property name="relative-to" value="/home/edser/Desktop/CS/Master/Year 2/Blok Ib/Software Maintenance &amp; Evolution/Structure101 Studio 5" />
+  <property name="action-set-mod" value="1" />
+  <property name="detail-mode" value="true" />
+  <property name="hide-deprecated" value="false" />
+  <property name="resolve-name-clashes" value="true" />
+  <property name="project-excluded" />
+  <property name="show-needs-to-compile" value="false" />
+  <classpath>
+    <classpathentry kind="lib" path="../frostwire/desktop/build/classes/java/main" module="main" displaymodule="main" />
+  </classpath>
+  <pom-root-files />
+  <modules-in-scope />
+  <restructuring>
+    <set version="3" name="Action list 1" hiview="Codemap" active="true" todo="false" list="0">
+      <action type="add-folder" active="true" last-applied="true" description="Add old_limewire to main">
+        <params name="old_limewire">
+          <parent-fqn fqn="main" type="jar">
+            <node name="main" type="jar" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.org.limewire to main.old_limewire">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.org.limewire to main.old_limewire">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.org.limewire to main.old_limewire">
+                <params>
+                  <source-fqn fqn="main.org.limewire" type="package">
+                    <node name="main" type="jar" />
+                    <node name="org" type="package" />
+                    <node name="limewire" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.old_limewire" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="old_limewire" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.old_limewire" type="folder">
+                <node name="main" type="jar" />
+                <node name="old_limewire" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com.limegroup to main.old_limewire">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com.limegroup to main.old_limewire">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com.limegroup to main.old_limewire">
+                <params>
+                  <source-fqn fqn="main.com.limegroup" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com" type="package" />
+                    <node name="limegroup" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.old_limewire" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="old_limewire" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.old_limewire" type="folder">
+                <node name="main" type="jar" />
+                <node name="old_limewire" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-delete" active="true" last-applied="true" description="Remove 1 items">
+        <composite-set>
+          <action type="remove-node" active="true" last-applied="true" description="Remove main.org">
+            <params onlyIfEmptyOfEntities="true">
+              <source-fqn fqn="main.org" type="package">
+                <node name="main" type="jar" />
+                <node name="org" type="package" />
+              </source-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com.frostwire to main">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com.frostwire to main">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com.frostwire to main">
+                <params>
+                  <source-fqn fqn="main.com.frostwire" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com" type="package" />
+                    <node name="frostwire" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main" type="jar">
+                    <node name="main" type="jar" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main" type="jar">
+                <node name="main" type="jar" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="auto-structure" active="true" last-applied="true" description="Auto-levelize main.frostwire.regex">
+        <composite-set>
+          <action type="flatten-v2" active="true" last-applied="true" description="Flatten main.frostwire.regex">
+            <composite-set />
+            <params flattenLeafFolders="true">
+              <container-fqn fqn="main.frostwire.regex" type="package">
+                <node name="main" type="jar" />
+                <node name="frostwire" type="package" />
+                <node name="regex" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="wrap" active="true" last-applied="true" description="Wrap (2) items into Auto2x839 in main.frostwire.regex">
+            <composite-set>
+              <action type="add-folder" active="true" last-applied="true" description="Add Auto2x839 to main.frostwire.regex">
+                <params name="Auto2x839">
+                  <parent-fqn fqn="main.frostwire.regex" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="regex" type="package" />
+                  </parent-fqn>
+                </params>
+              </action>
+              <action type="move" active="true" last-applied="true" description="Move main.frostwire.regex.Matcher to Auto2x839 in main.frostwire.regex">
+                <params toChild="Auto2x839" toChildType="folder">
+                  <source-fqn fqn="main.frostwire.regex.Matcher" type="class" path="main.com.frostwire.regex.Matcher">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="regex" type="package" />
+                    <node name="Matcher" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.frostwire.regex" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="regex" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+              <action type="move" active="true" last-applied="true" description="Move main.frostwire.regex.Pattern to Auto2x839 in main.frostwire.regex">
+                <params toChild="Auto2x839" toChildType="folder">
+                  <source-fqn fqn="main.frostwire.regex.Pattern" type="class" path="main.com.frostwire.regex.Pattern">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="regex" type="package" />
+                    <node name="Pattern" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.frostwire.regex" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="regex" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <group-move />
+          </action>
+        </composite-set>
+        <params flattenLeafFolders="true">
+          <container-fqn fqn="main.frostwire.regex" type="package">
+            <node name="main" type="jar" />
+            <node name="frostwire" type="package" />
+            <node name="regex" type="package" />
+          </container-fqn>
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (2) items to main.frostwire.regex">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.frostwire.regex.Auto2x839.Matcher to main.frostwire.regex">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.frostwire.regex.Auto2x839.Matcher to main.frostwire.regex">
+                <params>
+                  <source-fqn fqn="main.frostwire.regex.Auto2x839.Matcher" type="class" path="main.com.frostwire.regex.Matcher">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="regex" type="package" />
+                    <node name="Auto2x839" type="folder" />
+                    <node name="Matcher" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.frostwire.regex" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="regex" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.frostwire.regex" type="package">
+                <node name="main" type="jar" />
+                <node name="frostwire" type="package" />
+                <node name="regex" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.frostwire.regex.Auto2x839.Pattern to main.frostwire.regex">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.frostwire.regex.Auto2x839.Pattern to main.frostwire.regex">
+                <params>
+                  <source-fqn fqn="main.frostwire.regex.Auto2x839.Pattern" type="class" path="main.com.frostwire.regex.Pattern">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="regex" type="package" />
+                    <node name="Auto2x839" type="folder" />
+                    <node name="Pattern" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.frostwire.regex" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="regex" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.frostwire.regex" type="package">
+                <node name="main" type="jar" />
+                <node name="frostwire" type="package" />
+                <node name="regex" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.frostwire.content to main.frostwire.database">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.frostwire.content to main.frostwire.database">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.frostwire.content to main.frostwire.database">
+                <params>
+                  <source-fqn fqn="main.frostwire.content" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="content" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.frostwire.database" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="database" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.frostwire.database" type="package">
+                <node name="main" type="jar" />
+                <node name="frostwire" type="package" />
+                <node name="database" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add media_format to main.frostwire">
+        <params name="media_format">
+          <parent-fqn fqn="main.frostwire" type="package">
+            <node name="main" type="jar" />
+            <node name="frostwire" type="package" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add media_format to main.frostwire.mp4">
+        <params name="media_format">
+          <parent-fqn fqn="main.frostwire.mp4" type="package">
+            <node name="main" type="jar" />
+            <node name="frostwire" type="package" />
+            <node name="mp4" type="package" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.frostwire.jpeg to main.frostwire.media_format">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.frostwire.jpeg to main.frostwire.media_format">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.frostwire.jpeg to main.frostwire.media_format">
+                <params>
+                  <source-fqn fqn="main.frostwire.jpeg" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="jpeg" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.frostwire.media_format" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="media_format" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.frostwire.media_format" type="folder">
+                <node name="main" type="jar" />
+                <node name="frostwire" type="package" />
+                <node name="media_format" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.frostwire.mp3 to main.frostwire.media_format">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.frostwire.mp3 to main.frostwire.media_format">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.frostwire.mp3 to main.frostwire.media_format">
+                <params>
+                  <source-fqn fqn="main.frostwire.mp3" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="mp3" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.frostwire.media_format" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="media_format" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.frostwire.media_format" type="folder">
+                <node name="main" type="jar" />
+                <node name="frostwire" type="package" />
+                <node name="media_format" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.frostwire.mp4 to main.frostwire.media_format">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.frostwire.mp4 to main.frostwire.media_format">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.frostwire.mp4 to main.frostwire.media_format">
+                <params>
+                  <source-fqn fqn="main.frostwire.mp4" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="mp4" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.frostwire.media_format" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="media_format" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.frostwire.media_format" type="folder">
+                <node name="main" type="jar" />
+                <node name="frostwire" type="package" />
+                <node name="media_format" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.frostwire.database.content to main.frostwire">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.frostwire.database.content to main.frostwire">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.frostwire.database.content to main.frostwire">
+                <params>
+                  <source-fqn fqn="main.frostwire.database.content" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                    <node name="database" type="package" />
+                    <node name="content" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.frostwire" type="package">
+                    <node name="main" type="jar" />
+                    <node name="frostwire" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.frostwire" type="package">
+                <node name="main" type="jar" />
+                <node name="frostwire" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-rename-prefix" active="true" last-applied="true" description="Rename 1 items">
+        <composite-set>
+          <action type="rename" active="true" last-applied="true" description="Rename main.old_limewire.limegroup to old_limewire_limegroup">
+            <params name="old_limewire_limegroup">
+              <source-fqn fqn="main.old_limewire.limegroup" type="package">
+                <node name="main" type="jar" />
+                <node name="old_limewire" type="folder" />
+                <node name="limegroup" type="package" />
+              </source-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-rename-prefix" active="true" last-applied="true" description="Rename 1 items">
+        <composite-set>
+          <action type="rename" active="true" last-applied="true" description="Rename main.old_limewire.old_limewire_limegroup to main_old_limewire_old_limewire_limegroup">
+            <params name="main_old_limewire_old_limewire_limegroup">
+              <source-fqn fqn="main.old_limewire.old_limewire_limegroup" type="package">
+                <node name="main" type="jar" />
+                <node name="old_limewire" type="folder" />
+                <node name="old_limewire_limegroup" type="package" />
+              </source-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="rename" active="true" last-applied="true" description="Rename main.old_limewire.main_old_limewire_old_limewire_limegroup to com/limegrou">
+        <params name="com/limegrou">
+          <source-fqn fqn="main.old_limewire.main_old_limewire_old_limewire_limegroup" type="package">
+            <node name="main" type="jar" />
+            <node name="old_limewire" type="folder" />
+            <node name="main_old_limewire_old_limewire_limegroup" type="package" />
+          </source-fqn>
+        </params>
+      </action>
+      <action type="rename" active="true" last-applied="true" description="Rename main.old_limewire.com/limegrou to com/limegroup">
+        <params name="com/limegroup">
+          <source-fqn fqn="main.old_limewire.com/limegrou" type="package">
+            <node name="main" type="jar" />
+            <node name="old_limewire" type="folder" />
+            <node name="com/limegrou" type="package" />
+          </source-fqn>
+        </params>
+      </action>
+      <action type="rename" active="true" last-applied="true" description="Rename main.old_limewire.limewire to org/limewire">
+        <params name="org/limewire">
+          <source-fqn fqn="main.old_limewire.limewire" type="package">
+            <node name="main" type="jar" />
+            <node name="old_limewire" type="folder" />
+            <node name="limewire" type="package" />
+          </source-fqn>
+        </params>
+      </action>
+      <action type="rename" active="true" last-applied="true" description="Rename main.frostwire.media_format to media_format__C">
+        <params name="media_format__C">
+          <source-fqn fqn="main.frostwire.media_format" type="folder">
+            <node name="main" type="jar" />
+            <node name="frostwire" type="package" />
+            <node name="media_format" type="folder" />
+          </source-fqn>
+        </params>
+      </action>
+      <action type="rename" active="true" last-applied="true" description="Rename main.old_limewire to old_limewire__C">
+        <params name="old_limewire__C">
+          <source-fqn fqn="main.old_limewire" type="folder">
+            <node name="main" type="jar" />
+            <node name="old_limewire" type="folder" />
+          </source-fqn>
+        </params>
+      </action>
+      <action type="rename" active="true" last-applied="true" description="Rename main.frostwire to com/frostwire">
+        <params name="com/frostwire">
+          <source-fqn fqn="main.frostwire" type="package">
+            <node name="main" type="jar" />
+            <node name="frostwire" type="package" />
+          </source-fqn>
+        </params>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add user_interface__C to main.com/frostwire">
+        <params name="user_interface__C">
+          <parent-fqn fqn="main.com/frostwire" type="package">
+            <node name="main" type="jar" />
+            <node name="com/frostwire" type="package" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.mplayer to main.com/frostwire.user_interface__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.mplayer to main.com/frostwire.user_interface__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.mplayer to main.com/frostwire.user_interface__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.mplayer" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="mplayer" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.user_interface__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="user_interface__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.user_interface__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="user_interface__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.gui to main.com/frostwire.user_interface__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.gui to main.com/frostwire.user_interface__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.gui to main.com/frostwire.user_interface__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.gui" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="gui" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.user_interface__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="user_interface__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.user_interface__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="user_interface__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add media_library__C to main.com/frostwire">
+        <params name="media_library__C">
+          <parent-fqn fqn="main.com/frostwire" type="package">
+            <node name="main" type="jar" />
+            <node name="com/frostwire" type="package" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.alexandria to main.com/frostwire.media_library__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.alexandria to main.com/frostwire.media_library__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.alexandria to main.com/frostwire.media_library__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.alexandria" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="alexandria" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.media_library__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="media_library__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.media_library__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="media_library__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="rename" active="true" last-applied="true" description="Rename main.com/frostwire.media_format__C to media_formats__C">
+        <params name="media_formats__C">
+          <source-fqn fqn="main.com/frostwire.media_format__C" type="folder">
+            <node name="main" type="jar" />
+            <node name="com/frostwire" type="package" />
+            <node name="media_format__C" type="folder" />
+          </source-fqn>
+        </params>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add database__C to main">
+        <params name="database__C">
+          <parent-fqn fqn="main" type="jar">
+            <node name="main" type="jar" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.database__C to main.com/frostwire">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.database__C to main.com/frostwire">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.database__C to main.com/frostwire">
+                <params>
+                  <source-fqn fqn="main.database__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="database__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.database to main.com/frostwire.database__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.database to main.com/frostwire.database__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.database to main.com/frostwire.database__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.database" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="database" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.database__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="database__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.database__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="database__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.content to main.com/frostwire.database__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.content to main.com/frostwire.database__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.content to main.com/frostwire.database__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.content" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="content" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.database__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="database__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.database__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="database__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add searching_torrents__C to main.com/frostwire">
+        <params name="searching_torrents__C">
+          <parent-fqn fqn="main.com/frostwire" type="package">
+            <node name="main" type="jar" />
+            <node name="com/frostwire" type="package" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.search to main.com/frostwire.searching_torrents__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.search to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.search to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="search" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add torrenting_library__C to root">
+        <params name="torrenting_library__C">
+          <parent-fqn fqn="root" type="root" isroot="true" />
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move torrenting_library__C to main.com/frostwire">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move torrenting_library__C to main.com/frostwire">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move torrenting_library__C to main.com/frostwire">
+                <params>
+                  <source-fqn fqn="torrenting_library__C" type="folder">
+                    <node name="torrenting_library__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.transfers to main.com/frostwire.torrenting_library__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.transfers to main.com/frostwire.torrenting_library__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.transfers to main.com/frostwire.torrenting_library__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.transfers" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="transfers" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.torrenting_library__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="torrenting_library__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.torrenting_library__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="torrenting_library__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.bittorrent to main.com/frostwire.torrenting_library__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.bittorrent to main.com/frostwire.torrenting_library__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.bittorrent to main.com/frostwire.torrenting_library__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.bittorrent" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="bittorrent" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.torrenting_library__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="torrenting_library__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.torrenting_library__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="torrenting_library__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add leftover_utils__C to main.com/frostwire">
+        <params name="leftover_utils__C">
+          <parent-fqn fqn="main.com/frostwire" type="package">
+            <node name="main" type="jar" />
+            <node name="com/frostwire" type="package" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.desktop to main.com/frostwire.leftover_utils__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.desktop to main.com/frostwire.leftover_utils__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.desktop to main.com/frostwire.leftover_utils__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.desktop" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="desktop" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.leftover_utils__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="leftover_utils__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.leftover_utils__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="leftover_utils__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.platform to main.com/frostwire.leftover_utils__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.platform to main.com/frostwire.leftover_utils__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.platform to main.com/frostwire.leftover_utils__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.platform" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="platform" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.leftover_utils__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="leftover_utils__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.leftover_utils__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="leftover_utils__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.regex to main.com/frostwire.leftover_utils__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.regex to main.com/frostwire.leftover_utils__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.regex to main.com/frostwire.leftover_utils__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.regex" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="regex" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.leftover_utils__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="leftover_utils__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.leftover_utils__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="leftover_utils__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add search__C to main.com/frostwire.searching_torrents__C.search">
+        <params name="search__C">
+          <parent-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+            <node name="main" type="jar" />
+            <node name="com/frostwire" type="package" />
+            <node name="searching_torrents__C" type="folder" />
+            <node name="search" type="package" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add torrent_providers__C to root">
+        <params name="torrent_providers__C">
+          <parent-fqn fqn="root" type="root" isroot="true" />
+        </params>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add other_providers__C to root">
+        <params name="other_providers__C">
+          <parent-fqn fqn="root" type="root" isroot="true" />
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (2) items to main.com/frostwire.searching_torrents__C.search">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move other_providers__C to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move other_providers__C to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="other_providers__C" type="folder">
+                    <node name="other_providers__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move torrent_providers__C to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move torrent_providers__C to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="torrent_providers__C" type="folder">
+                    <node name="torrent_providers__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (2) items to main.com/frostwire.searching_torrents__C.search.other_providers__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.archiveorg to main.com/frostwire.searching_torrents__C.search.other_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.archiveorg to main.com/frostwire.searching_torrents__C.search.other_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.archiveorg" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="archiveorg" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.other_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="other_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.other_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="other_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.soundcloud to main.com/frostwire.searching_torrents__C.search.other_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.soundcloud to main.com/frostwire.searching_torrents__C.search.other_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.soundcloud" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="soundcloud" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.other_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="other_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.other_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="other_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (9) items to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.nyaa to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.nyaa to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.nyaa" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="nyaa" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.frostclick to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.frostclick to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.frostclick" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="frostclick" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.limetorrents to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.limetorrents to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.limetorrents" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="limetorrents" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.eztv to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.eztv to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.eztv" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="eztv" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.tpb to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.tpb to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.tpb" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="tpb" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.yify to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.yify to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.yify" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="yify" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.zooqle to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.zooqle to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.zooqle" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="zooqle" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrentz2 to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrentz2 to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrentz2" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrentz2" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torlock to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torlock to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.torlock" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torlock" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrentdownloads to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrentdownloads to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrentdownloads to main.com/frostwire.searching_torrents__C.search.torrent_providers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrentdownloads" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrentdownloads" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="torrent_providers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrent to main.com/frostwire.searching_torrents__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrent to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrent to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add search_performers__C to main.com/frostwire.searching_torrents__C.search">
+        <params name="search_performers__C">
+          <parent-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+            <node name="main" type="jar" />
+            <node name="com/frostwire" type="package" />
+            <node name="searching_torrents__C" type="folder" />
+            <node name="search" type="package" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add search_results__C to root">
+        <params name="search_results__C">
+          <parent-fqn fqn="root" type="root" isroot="true" />
+        </params>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move search_results__C to main.com/frostwire.searching_torrents__C.search">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move search_results__C to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move search_results__C to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="search_results__C" type="folder">
+                    <node name="search_results__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (7) items to main.com/frostwire.searching_torrents__C.search.search_results__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlableSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlableSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.CrawlableSearchResult" type="class" path="main.com.frostwire.search.CrawlableSearchResult">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="CrawlableSearchResult" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_results__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AbstractCrawledSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AbstractCrawledSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.AbstractCrawledSearchResult" type="class" path="main.com.frostwire.search.AbstractCrawledSearchResult">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="AbstractCrawledSearchResult" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_results__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.SearchResult" type="class" path="main.com.frostwire.search.SearchResult">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="SearchResult" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_results__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawledSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawledSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.CrawledSearchResult" type="class" path="main.com.frostwire.search.CrawledSearchResult">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="CrawledSearchResult" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_results__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AbstractSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AbstractSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.AbstractSearchResult" type="class" path="main.com.frostwire.search.AbstractSearchResult">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="AbstractSearchResult" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_results__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.FileSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.FileSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.FileSearchResult" type="class" path="main.com.frostwire.search.FileSearchResult">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="FileSearchResult" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_results__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AbstractFileSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AbstractFileSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.AbstractFileSearchResult" type="class" path="main.com.frostwire.search.AbstractFileSearchResult">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="AbstractFileSearchResult" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_results__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.StreamableSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.StreamableSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.StreamableSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.StreamableSearchResult" type="class" path="main.com.frostwire.search.StreamableSearchResult">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="StreamableSearchResult" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_results__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.HttpSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.HttpSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.HttpSearchResult to main.com/frostwire.searching_torrents__C.search.search_results__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.HttpSearchResult" type="class" path="main.com.frostwire.search.HttpSearchResult">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="HttpSearchResult" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_results__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (7) items to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlRegexSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlRegexSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.CrawlRegexSearchPerformer" type="class" path="main.com.frostwire.search.CrawlRegexSearchPerformer">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="CrawlRegexSearchPerformer" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_performers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AbstractSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AbstractSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.AbstractSearchPerformer" type="class" path="main.com.frostwire.search.AbstractSearchPerformer">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="AbstractSearchPerformer" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_performers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.WebSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.WebSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.WebSearchPerformer" type="class" path="main.com.frostwire.search.WebSearchPerformer">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="WebSearchPerformer" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_performers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.SearchPerformer" type="class" path="main.com.frostwire.search.SearchPerformer">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="SearchPerformer" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_performers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlPagedWebSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlPagedWebSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.CrawlPagedWebSearchPerformer" type="class" path="main.com.frostwire.search.CrawlPagedWebSearchPerformer">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="CrawlPagedWebSearchPerformer" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_performers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.PagedWebSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.PagedWebSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.PagedWebSearchPerformer" type="class" path="main.com.frostwire.search.PagedWebSearchPerformer">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="PagedWebSearchPerformer" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_performers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.RegexSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.RegexSearchPerformer to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.RegexSearchPerformer" type="class" path="main.com.frostwire.search.RegexSearchPerformer">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="RegexSearchPerformer" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_performers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AlbumCluster to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AlbumCluster to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.AlbumCluster to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.AlbumCluster" type="class" path="main.com.frostwire.search.AlbumCluster">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="AlbumCluster" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_performers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.PerformersHelper to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.PerformersHelper to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.PerformersHelper to main.com/frostwire.searching_torrents__C.search.search_performers__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.PerformersHelper" type="class" path="main.com.frostwire.search.PerformersHelper">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="PerformersHelper" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search_performers__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (2) items to main.com/frostwire.searching_torrents__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.DatabaseCrawlCache to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.DatabaseCrawlCache to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.DatabaseCrawlCache" type="class" path="main.com.frostwire.search.DatabaseCrawlCache">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="DatabaseCrawlCache" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.LibTorrentMagnetDownloader to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.LibTorrentMagnetDownloader to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.LibTorrentMagnetDownloader" type="class" path="main.com.frostwire.search.LibTorrentMagnetDownloader">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="LibTorrentMagnetDownloader" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (2) items to main.com/frostwire.searching_torrents__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlCacheDB to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlCacheDB to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.CrawlCacheDB" type="class" path="main.com.frostwire.search.CrawlCacheDB">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="CrawlCacheDB" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.KeywordMediaType to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.KeywordMediaType to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.KeywordMediaType" type="class" path="main.com.frostwire.search.KeywordMediaType">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="KeywordMediaType" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (2) items to main.com/frostwire.searching_torrents__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.MagnetDownloader to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.MagnetDownloader to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.MagnetDownloader" type="class" path="main.com.frostwire.search.MagnetDownloader">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="MagnetDownloader" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlCache to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.CrawlCache to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.CrawlCache" type="class" path="main.com.frostwire.search.CrawlCache">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="CrawlCache" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.other_providers__C to main.com/frostwire.searching_torrents__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.other_providers__C to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.other_providers__C to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.other_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="other_providers__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrent_providers__C to main.com/frostwire.searching_torrents__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrent_providers__C to main.com/frostwire.searching_torrents__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.torrent_providers__C to main.com/frostwire.searching_torrents__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (9) items to main.com/frostwire.searching_torrents__C.search.search__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchManager to main.com/frostwire.searching_torrents__C.search.search__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchManager to main.com/frostwire.searching_torrents__C.search.search__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.SearchManager" type="class" path="main.com.frostwire.search.SearchManager">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="SearchManager" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.search_performers__C to main.com/frostwire.searching_torrents__C.search.search__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.search_performers__C to main.com/frostwire.searching_torrents__C.search.search__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_performers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_performers__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.search_results__C to main.com/frostwire.searching_torrents__C.search.search__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.search_results__C to main.com/frostwire.searching_torrents__C.search.search__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.search_results__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search_results__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.filter to main.com/frostwire.searching_torrents__C.search.search__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.filter to main.com/frostwire.searching_torrents__C.search.search__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.filter" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="filter" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.KeywordFilter to main.com/frostwire.searching_torrents__C.search.search__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.KeywordFilter to main.com/frostwire.searching_torrents__C.search.search__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.KeywordFilter" type="class" path="main.com.frostwire.search.KeywordFilter">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="KeywordFilter" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.KeywordDetector to main.com/frostwire.searching_torrents__C.search.search__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.KeywordDetector to main.com/frostwire.searching_torrents__C.search.search__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.KeywordDetector" type="class" path="main.com.frostwire.search.KeywordDetector">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="KeywordDetector" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchListener to main.com/frostwire.searching_torrents__C.search.search__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchListener to main.com/frostwire.searching_torrents__C.search.search__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.SearchListener" type="class" path="main.com.frostwire.search.SearchListener">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="SearchListener" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchMatcher to main.com/frostwire.searching_torrents__C.search.search__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchMatcher to main.com/frostwire.searching_torrents__C.search.search__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.SearchMatcher" type="class" path="main.com.frostwire.search.SearchMatcher">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="SearchMatcher" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchError to main.com/frostwire.searching_torrents__C.search.search__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.search.SearchError to main.com/frostwire.searching_torrents__C.search.search__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.search.SearchError" type="class" path="main.com.frostwire.search.SearchError">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="SearchError" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                    <node name="search__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search.search__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+                <node name="search__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move (9) items to main.com/frostwire.searching_torrents__C.search">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.CrawlCacheDB to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.CrawlCacheDB to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.CrawlCacheDB" type="class" path="main.com.frostwire.search.CrawlCacheDB">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="CrawlCacheDB" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.other_providers__C to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.other_providers__C to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.other_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="other_providers__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.DatabaseCrawlCache to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.DatabaseCrawlCache to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.DatabaseCrawlCache" type="class" path="main.com.frostwire.search.DatabaseCrawlCache">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="DatabaseCrawlCache" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.torrent to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.torrent to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.torrent" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="torrent" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.KeywordMediaType to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.KeywordMediaType to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.KeywordMediaType" type="class" path="main.com.frostwire.search.KeywordMediaType">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="KeywordMediaType" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.LibTorrentMagnetDownloader to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.LibTorrentMagnetDownloader to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.LibTorrentMagnetDownloader" type="class" path="main.com.frostwire.search.LibTorrentMagnetDownloader">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="LibTorrentMagnetDownloader" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.torrent_providers__C to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.torrent_providers__C to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.torrent_providers__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="torrent_providers__C" type="folder" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.MagnetDownloader to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.MagnetDownloader to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.MagnetDownloader" type="class" path="main.com.frostwire.search.MagnetDownloader">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="MagnetDownloader" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.CrawlCache to main.com/frostwire.searching_torrents__C.search">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.searching_torrents__C.CrawlCache to main.com/frostwire.searching_torrents__C.search">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.searching_torrents__C.CrawlCache" type="class" path="main.com.frostwire.search.CrawlCache">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="CrawlCache" type="class" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="searching_torrents__C" type="folder" />
+                    <node name="search" type="package" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.searching_torrents__C.search" type="package">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="searching_torrents__C" type="folder" />
+                <node name="search" type="package" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add H2_database__C to main.com/frostwire.media_library__C">
+        <params name="H2_database__C">
+          <parent-fqn fqn="main.com/frostwire.media_library__C" type="folder">
+            <node name="main" type="jar" />
+            <node name="com/frostwire" type="package" />
+            <node name="media_library__C" type="folder" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="add-folder" active="true" last-applied="true" description="Add H2_database__C to main.com/frostwire.media_library__C.alexandria">
+        <params name="H2_database__C">
+          <parent-fqn fqn="main.com/frostwire.media_library__C.alexandria" type="package">
+            <node name="main" type="jar" />
+            <node name="com/frostwire" type="package" />
+            <node name="media_library__C" type="folder" />
+            <node name="alexandria" type="package" />
+          </parent-fqn>
+        </params>
+      </action>
+      <action type="group-delete" active="true" last-applied="true" description="Remove 1 items">
+        <composite-set>
+          <action type="remove-node" active="true" last-applied="true" description="Remove main.com/frostwire.media_library__C.H2_database__C">
+            <params onlyIfEmptyOfEntities="true">
+              <source-fqn fqn="main.com/frostwire.media_library__C.H2_database__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="media_library__C" type="folder" />
+                <node name="H2_database__C" type="folder" />
+              </source-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <action type="group-smart-move" active="true" last-applied="true" description="Move main.com/frostwire.media_library__C.alexandria.db to main.com/frostwire.media_library__C.alexandria.H2_database__C">
+        <composite-set>
+          <action type="smart-move" active="true" last-applied="true" description="Move main.com/frostwire.media_library__C.alexandria.db to main.com/frostwire.media_library__C.alexandria.H2_database__C">
+            <composite-set>
+              <action type="move" active="true" last-applied="true" description="Move main.com/frostwire.media_library__C.alexandria.db to main.com/frostwire.media_library__C.alexandria.H2_database__C">
+                <params>
+                  <source-fqn fqn="main.com/frostwire.media_library__C.alexandria.db" type="package">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="media_library__C" type="folder" />
+                    <node name="alexandria" type="package" />
+                    <node name="db" type="package" />
+                  </source-fqn>
+                  <to-fqn fqn="main.com/frostwire.media_library__C.alexandria.H2_database__C" type="folder">
+                    <node name="main" type="jar" />
+                    <node name="com/frostwire" type="package" />
+                    <node name="media_library__C" type="folder" />
+                    <node name="alexandria" type="package" />
+                    <node name="H2_database__C" type="folder" />
+                  </to-fqn>
+                </params>
+              </action>
+            </composite-set>
+            <params>
+              <container-fqn fqn="main.com/frostwire.media_library__C.alexandria.H2_database__C" type="folder">
+                <node name="main" type="jar" />
+                <node name="com/frostwire" type="package" />
+                <node name="media_library__C" type="folder" />
+                <node name="alexandria" type="package" />
+                <node name="H2_database__C" type="folder" />
+              </container-fqn>
+            </params>
+          </action>
+        </composite-set>
+      </action>
+      <hide>
+        <item-fqn fqn="main.com" type="package">
+          <node name="main" type="jar" />
+          <node name="com" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.net" type="package">
+          <node name="main" type="jar" />
+          <node name="net" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.sun" type="package">
+          <node name="main" type="jar" />
+          <node name="sun" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.com.apple" type="package">
+          <node name="main" type="jar" />
+          <node name="com" type="package" />
+          <node name="apple" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.old_limewire.limegroup.gnutella.util" type="package">
+          <node name="main" type="jar" />
+          <node name="old_limewire" type="folder" />
+          <node name="limegroup" type="package" />
+          <node name="gnutella" type="package" />
+          <node name="util" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.frostwire.tests" type="package">
+          <node name="main" type="jar" />
+          <node name="frostwire" type="package" />
+          <node name="tests" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.frostwire.util" type="package">
+          <node name="main" type="jar" />
+          <node name="frostwire" type="package" />
+          <node name="util" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.frostwire.licenses" type="package">
+          <node name="main" type="jar" />
+          <node name="frostwire" type="package" />
+          <node name="licenses" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.frostwire.regex.Auto2x839" type="folder">
+          <node name="main" type="jar" />
+          <node name="frostwire" type="package" />
+          <node name="regex" type="package" />
+          <node name="Auto2x839" type="folder" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.frostwire.gui.DigestUtils" type="class" path="main.com.frostwire.gui.DigestUtils">
+          <node name="main" type="jar" />
+          <node name="frostwire" type="package" />
+          <node name="gui" type="package" />
+          <node name="DigestUtils" type="class" />
+        </item-fqn>
+      </hide>
+    </set>
+  </restructuring>
+  <sourcepaths>
+    <pathentry type="file" path="../frostwire/desktop/src" />
+  </sourcepaths>
+  <grid-set sep="." version="5.0.15111">
+    <grid name="Frostwire overview" enforce="true" locked="false" strict="false">
+      <row>
+        <cell name="Media library" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="alexandria" pattern="main.com.frostwire.alexandria.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+        <cell name="User interface" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="mplayer" pattern="main.com.frostwire.mplayer.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="gui" pattern="main.com.frostwire.gui.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+        <cell name="Media formats" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="jpeg" pattern="main.com.frostwire.jpeg.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="mp4" pattern="main.com.frostwire.mp4.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="mp3" pattern="main.com.frostwire.mp3.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <row>
+        <cell name="Database" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="content" pattern="main.com.frostwire.content.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="database" pattern="main.com.frostwire.database.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+        <cell name="Searching torrents" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="search" pattern="main.com.frostwire.search.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="tests" pattern="main.com.frostwire.tests.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+        <cell name="Torrenting library" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="transfers" pattern="main.com.frostwire.transfers.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="bittorrent" pattern="main.com.frostwire.bittorrent.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <row>
+        <cell name="desktop" pattern="main.com.frostwire.desktop.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+        <cell name="Utilities" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="regex" pattern="main.com.frostwire.regex.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="util" pattern="main.com.frostwire.util.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="platform" pattern="main.com.frostwire.platform.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <description>Subsystem breakout for 'main.com.frostwire'</description>
+    </grid>
+    <grid name="Diagram 1" enforce="true" locked="false" strict="false">
+      <row>
+        <cell name="LimeWireCoreModule" pattern="main.com.limegroup.gnutella.LimeWireCoreModule" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <row>
+        <cell name="gui" pattern="main.com.limegroup.gnutella.gui.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <row>
+        <cell name="LimeWireCore" pattern="main.com.limegroup.gnutella.LimeWireCore" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <row>
+        <cell name="ExternalControl" pattern="main.com.limegroup.gnutella.ExternalControl" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <row>
+        <cell name="LifecycleManagerImpl" pattern="main.com.limegroup.gnutella.LifecycleManagerImpl" vexpanded="false" illegal="false" visibility="public" drill="true" />
+        <cell name="MagnetOptions" pattern="main.com.limegroup.gnutella.MagnetOptions" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <row>
+        <cell name="DownloadManagerImpl" pattern="main.com.limegroup.gnutella.DownloadManagerImpl" vexpanded="false" illegal="false" visibility="public" drill="true" />
+        <cell name="LimeCoreGlue" pattern="main.com.limegroup.gnutella.LimeCoreGlue" vexpanded="false" illegal="false" visibility="public" drill="true" />
+        <cell name="util" pattern="main.com.limegroup.gnutella.util.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <row>
+        <cell name="settings" pattern="main.com.limegroup.gnutella.settings.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <row>
+        <cell name="ActivityCallback" pattern="main.com.limegroup.gnutella.ActivityCallback" vexpanded="false" illegal="false" visibility="public" drill="true" />
+        <cell name="DownloadManager" pattern="main.com.limegroup.gnutella.DownloadManager" vexpanded="false" illegal="false" visibility="public" drill="true" />
+        <cell name="LifecycleManager" pattern="main.com.limegroup.gnutella.LifecycleManager" vexpanded="false" illegal="false" visibility="public" drill="true" />
+        <cell name="MediaType" pattern="main.com.limegroup.gnutella.MediaType" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <description>Subsystem breakout for 'main.com.limegroup.gnutella'</description>
+    </grid>
+    <grid name="Diagram 2" enforce="true" locked="false" strict="false">
+      <row>
+        <cell name="org" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="limewire" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="setting" pattern="main.org.limewire.setting.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="concurrent" pattern="main.org.limewire.concurrent.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="collection" pattern="main.org.limewire.collection.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="service" pattern="main.org.limewire.service.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="util" pattern="main.org.limewire.util.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+            <row>
+              <cell name="apache" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="commons" pattern="main.org.apache.commons.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+              <cell name="gudy" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="azureus2" pattern="main.org.gudy.azureus2.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <row>
+        <cell name="com" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="frostwire" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="gui" pattern="main.com.frostwire.gui.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="bittorrent" pattern="main.com.frostwire.bittorrent.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="tests" pattern="main.com.frostwire.tests.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="transfers" pattern="main.com.frostwire.transfers.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="desktop" pattern="main.com.frostwire.desktop.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="search" pattern="main.com.frostwire.search.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="alexandria" pattern="main.com.frostwire.alexandria.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="database" pattern="main.com.frostwire.database.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="platform" pattern="main.com.frostwire.platform.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="content" pattern="main.com.frostwire.content.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="jpeg" pattern="main.com.frostwire.jpeg.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="licenses" pattern="main.com.frostwire.licenses.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="mp3" pattern="main.com.frostwire.mp3.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="mp4" pattern="main.com.frostwire.mp4.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="mplayer" pattern="main.com.frostwire.mplayer.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="regex" pattern="main.com.frostwire.regex.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="util" pattern="main.com.frostwire.util.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+              <cell name="limegroup" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="gnutella" pattern="main.com.limegroup.gnutella.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+            <row>
+              <cell name="apple" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="concurrent" pattern="main.com.apple.concurrent.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="laf" pattern="main.com.apple.laf.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <row>
+        <cell name="net" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="miginfocom" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="swing" pattern="main.net.miginfocom.swing.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="layout" pattern="main.net.miginfocom.layout.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+        <cell name="sun" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="awt" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="windows" pattern="main.sun.awt.windows.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="X11" pattern="main.sun.awt.X11.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <description>Top-level breakout (depth=3)</description>
+    </grid>
+  </grid-set>
+  <physical-grid-set sep="." version="5.0.15111">
+    <grid name="Workspace spec" enforce="true" locked="true" strict="false">
+      <row>
+        <cell name="main" pattern="main.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+      </row>
+      <description>Top-level breakout</description>
+    </grid>
+  </physical-grid-set>
+</local-project>

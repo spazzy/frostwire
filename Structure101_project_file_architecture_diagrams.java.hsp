@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local-project language="java" version="5.0.15111" xml-version="3" flavor="j2se">
+  <property name="show-as-module" value="true" />
+  <property name="publish-architecture-artifacts" value="true" />
+  <property name="force-classpath" value="false" />
+  <property name="project-type" value="classpath" />
+  <property name="hide-externals" value="false" />
+  <property name="parse-archive-in-archive" value="false" />
+  <property name="include-injected-dependency" value="false" />
+  <property name="relative-to" value="/home/mark/development/structure101" />
+  <property name="action-set-mod" value="1" />
+  <property name="detail-mode" value="true" />
+  <property name="hide-deprecated" value="false" />
+  <property name="resolve-name-clashes" value="true" />
+  <property name="project-excluded" />
+  <property name="show-needs-to-compile" value="false" />
+  <classpath>
+    <classpathentry kind="lib" path="../frostwire/desktop/build/classes/java/main" module="main" displaymodule="main" />
+  </classpath>
+  <pom-root-files />
+  <modules-in-scope />
+  <excludes>
+    <exclude expression="(unknown).*" active="true" />
+    <exclude expression="(unknown).*" active="true" />
+    <exclude expression="(unknown).*" active="true" />
+    <exclude expression="(unknown).okhttp3.*" active="true" />
+  </excludes>
+  <restructuring>
+    <set version="3" name="Copy of Action list 1" hiview="Codemap" active="true" todo="false" list="0">
+      <hide>
+        <item-fqn fqn="main.com.limegroup.gnutella" type="package">
+          <node name="main" type="jar" />
+          <node name="com" type="package" />
+          <node name="limegroup" type="package" />
+          <node name="gnutella" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.com.limegroup.gnutella.gui" type="package">
+          <node name="main" type="jar" />
+          <node name="com" type="package" />
+          <node name="limegroup" type="package" />
+          <node name="gnutella" type="package" />
+          <node name="gui" type="package" />
+        </item-fqn>
+      </hide>
+    </set>
+    <set version="3" name="Action list 1" hiview="Codemap" active="false" todo="false" list="0">
+      <hide>
+        <item-fqn fqn="main.com.limegroup.gnutella" type="package">
+          <node name="main" type="jar" />
+          <node name="com" type="package" />
+          <node name="limegroup" type="package" />
+          <node name="gnutella" type="package" />
+        </item-fqn>
+      </hide>
+      <hide>
+        <item-fqn fqn="main.com.limegroup.gnutella.gui" type="package">
+          <node name="main" type="jar" />
+          <node name="com" type="package" />
+          <node name="limegroup" type="package" />
+          <node name="gnutella" type="package" />
+          <node name="gui" type="package" />
+        </item-fqn>
+      </hide>
+    </set>
+  </restructuring>
+  <sourcepaths>
+    <pathentry type="file" path="../frostwire/desktop/src" />
+  </sourcepaths>
+  <grid-set sep="." version="5.0.15111">
+    <grid name="Frostwire overview" enforce="true" locked="false" strict="false">
+      <row>
+        <cell name="Media library" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="alexandria" pattern="main.com.frostwire.alexandria.*" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="Library" pattern="main.com.frostwire.alexandria.Library" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="db" pattern="main.com.frostwire.alexandria.db.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="PlaylistItem" pattern="main.com.frostwire.alexandria.PlaylistItem" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="Playlist" pattern="main.com.frostwire.alexandria.Playlist" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+        <cell name="User interface" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="mplayer" pattern="main.com.frostwire.mplayer.?" vexpanded="false" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="BaseMediaPlayer" pattern="main.com.frostwire.mplayer.BaseMediaPlayer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="MediaPlayer" pattern="main.com.frostwire.mplayer.MediaPlayer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="MetaDataListener" pattern="main.com.frostwire.mplayer.MetaDataListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="Language" pattern="main.com.frostwire.mplayer.Language" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="StateListener" pattern="main.com.frostwire.mplayer.StateListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="IcyInfoListener" pattern="main.com.frostwire.mplayer.IcyInfoListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="ISO639" pattern="main.com.frostwire.mplayer.ISO639" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="LanguageSource" pattern="main.com.frostwire.mplayer.LanguageSource" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="MediaPlaybackState" pattern="main.com.frostwire.mplayer.MediaPlaybackState" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="PlayerPreferences" pattern="main.com.frostwire.mplayer.PlayerPreferences" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="PositionListener" pattern="main.com.frostwire.mplayer.PositionListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="TaskListener" pattern="main.com.frostwire.mplayer.TaskListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="VolumeListener" pattern="main.com.frostwire.mplayer.VolumeListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+            <row>
+              <cell name="gui" pattern="main.com.frostwire.gui.*" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="components" pattern="main.com.frostwire.gui.components.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="library" pattern="main.com.frostwire.gui.library.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="bittorrent" pattern="main.com.frostwire.gui.bittorrent.?" vexpanded="false" illegal="false" visibility="public" drill="true">
+                      <grid>
+                        <row>
+                          <cell name="BTDownloadMediatorAdvancedMenuFactory" pattern="main.com.frostwire.gui.bittorrent.BTDownloadMediatorAdvancedMenuFactory" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="BTDownloadActions" pattern="main.com.frostwire.gui.bittorrent.BTDownloadActions" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TransferSeedingRenderer" pattern="main.com.frostwire.gui.bittorrent.TransferSeedingRenderer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="BittorrentDownload" pattern="main.com.frostwire.gui.bittorrent.BittorrentDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="BTDownloadTransferHandler" pattern="main.com.frostwire.gui.bittorrent.BTDownloadTransferHandler" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SendFileProgressDialog" pattern="main.com.frostwire.gui.bittorrent.SendFileProgressDialog" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TransferDetailFilesActionsRenderer" pattern="main.com.frostwire.gui.bittorrent.TransferDetailFilesActionsRenderer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="TorrentUtil" pattern="main.com.frostwire.gui.bittorrent.TorrentUtil" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="BTDownloadMediator" pattern="main.com.frostwire.gui.bittorrent.BTDownloadMediator" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="BTDownloadRowFilteredModel" pattern="main.com.frostwire.gui.bittorrent.BTDownloadRowFilteredModel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="BTDownloadModel" pattern="main.com.frostwire.gui.bittorrent.BTDownloadModel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="BTDownloadDataLine" pattern="main.com.frostwire.gui.bittorrent.BTDownloadDataLine" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="CreateTorrentDialog" pattern="main.com.frostwire.gui.bittorrent.CreateTorrentDialog" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SlideDownload" pattern="main.com.frostwire.gui.bittorrent.SlideDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="CopyrightLicenseSelectorPanel" pattern="main.com.frostwire.gui.bittorrent.CopyrightLicenseSelectorPanel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="HttpDownload" pattern="main.com.frostwire.gui.bittorrent.HttpDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SoundcloudDownload" pattern="main.com.frostwire.gui.bittorrent.SoundcloudDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TorrentFetcherDownload" pattern="main.com.frostwire.gui.bittorrent.TorrentFetcherDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TransferActionsRenderer" pattern="main.com.frostwire.gui.bittorrent.TransferActionsRenderer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="HttpBTDownload" pattern="main.com.frostwire.gui.bittorrent.HttpBTDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LicenseToggleButton" pattern="main.com.frostwire.gui.bittorrent.LicenseToggleButton" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="PartialFilesDialog" pattern="main.com.frostwire.gui.bittorrent.PartialFilesDialog" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="PaymentOptionsPanel" pattern="main.com.frostwire.gui.bittorrent.PaymentOptionsPanel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SeedingHolder" pattern="main.com.frostwire.gui.bittorrent.SeedingHolder" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TransferHolder" pattern="main.com.frostwire.gui.bittorrent.TransferHolder" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="BTDownload" pattern="main.com.frostwire.gui.bittorrent.BTDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="BTDownloadButtons" pattern="main.com.frostwire.gui.bittorrent.BTDownloadButtons" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="CryptoCurrencyTextField" pattern="main.com.frostwire.gui.bittorrent.CryptoCurrencyTextField" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LicenseToggleButtonOnToggleListener" pattern="main.com.frostwire.gui.bittorrent.LicenseToggleButtonOnToggleListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="PaymentOptionsRenderer" pattern="main.com.frostwire.gui.bittorrent.PaymentOptionsRenderer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ShareTorrentDialog" pattern="main.com.frostwire.gui.bittorrent.ShareTorrentDialog" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TorrentFileInfo" pattern="main.com.frostwire.gui.bittorrent.TorrentFileInfo" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TorrentSaveFolderComponent" pattern="main.com.frostwire.gui.bittorrent.TorrentSaveFolderComponent" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TorrentSeedingSettingComponent" pattern="main.com.frostwire.gui.bittorrent.TorrentSeedingSettingComponent" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                      </grid>
+                    </cell>
+                    <cell name="mplayer" pattern="main.com.frostwire.gui.mplayer.?" vexpanded="false" illegal="false" visibility="public" drill="true">
+                      <grid>
+                        <row>
+                          <cell name="MPlayerComponentOSX2" pattern="main.com.frostwire.gui.mplayer.MPlayerComponentOSX2" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MPlayerWindowLinux" pattern="main.com.frostwire.gui.mplayer.MPlayerWindowLinux" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MPlayerWindowOSX" pattern="main.com.frostwire.gui.mplayer.MPlayerWindowOSX" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MPlayerWindowWin32" pattern="main.com.frostwire.gui.mplayer.MPlayerWindowWin32" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="MPlayerWindow" pattern="main.com.frostwire.gui.mplayer.MPlayerWindow" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="MPlayerComponentFactory" pattern="main.com.frostwire.gui.mplayer.MPlayerComponentFactory" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MPlayerOverlayControls" pattern="main.com.frostwire.gui.mplayer.MPlayerOverlayControls" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="AlphaAnimationThread" pattern="main.com.frostwire.gui.mplayer.AlphaAnimationThread" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MPlayer" pattern="main.com.frostwire.gui.mplayer.MPlayer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MPlayerComponentJava" pattern="main.com.frostwire.gui.mplayer.MPlayerComponentJava" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ProgressSlider" pattern="main.com.frostwire.gui.mplayer.ProgressSlider" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="AlphaTarget" pattern="main.com.frostwire.gui.mplayer.AlphaTarget" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MPlayerComponent" pattern="main.com.frostwire.gui.mplayer.MPlayerComponent" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MPlayerInstance" pattern="main.com.frostwire.gui.mplayer.MPlayerInstance" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ProgressSliderListener" pattern="main.com.frostwire.gui.mplayer.ProgressSliderListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TimeUtils" pattern="main.com.frostwire.gui.mplayer.TimeUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                      </grid>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell name="LocaleLabel" pattern="main.com.frostwire.gui.LocaleLabel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="player" pattern="main.com.frostwire.gui.player.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="searchfield" pattern="main.com.frostwire.gui.searchfield.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="tabs" pattern="main.com.frostwire.gui.tabs.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="updates" pattern="main.com.frostwire.gui.updates.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="AlphaIcon" pattern="main.com.frostwire.gui.AlphaIcon" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="DigestUtils" pattern="main.com.frostwire.gui.DigestUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="filters" pattern="main.com.frostwire.gui.filters.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="HideExitDialog" pattern="main.com.frostwire.gui.HideExitDialog" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="theme" pattern="main.com.frostwire.gui.theme.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+        <cell name="Media formats" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="jpeg" pattern="main.com.frostwire.jpeg.?" vexpanded="true" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="CMYKJPEGImageReader" pattern="main.com.frostwire.jpeg.CMYKJPEGImageReader" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="JPEGImageIO" pattern="main.com.frostwire.jpeg.JPEGImageIO" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="ImageInputStreamAdapter" pattern="main.com.frostwire.jpeg.ImageInputStreamAdapter" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="JFIFInputStream" pattern="main.com.frostwire.jpeg.JFIFInputStream" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+            <row>
+              <cell name="mp4" pattern="main.com.frostwire.mp4.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="mp3" pattern="main.com.frostwire.mp3.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <row>
+        <cell name="Old Limewire" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="gnutella" pattern="main.com.limegroup.gnutella.*" vexpanded="false" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="gui" pattern="main.com.limegroup.gnutella.gui.*" vexpanded="false" illegal="false" visibility="public" drill="true">
+                      <grid>
+                        <row>
+                          <cell name="GUILoader" pattern="main.com.limegroup.gnutella.gui.GUILoader" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="VisualConnectionCallback" pattern="main.com.limegroup.gnutella.gui.VisualConnectionCallback" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="Initializer" pattern="main.com.limegroup.gnutella.gui.Initializer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MainFrame" pattern="main.com.limegroup.gnutella.gui.MainFrame" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="ApplicationHeader" pattern="main.com.limegroup.gnutella.gui.ApplicationHeader" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="BasicFileIconController" pattern="main.com.limegroup.gnutella.gui.BasicFileIconController" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="DeadlockSupport" pattern="main.com.limegroup.gnutella.gui.DeadlockSupport" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="dnd" pattern="main.com.limegroup.gnutella.gui.dnd.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ErrorHandler" pattern="main.com.limegroup.gnutella.gui.ErrorHandler" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="Finalizer" pattern="main.com.limegroup.gnutella.gui.Finalizer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="init" pattern="main.com.limegroup.gnutella.gui.init.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LanguageButton" pattern="main.com.limegroup.gnutella.gui.LanguageButton" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LocalClientInfoFactoryImpl" pattern="main.com.limegroup.gnutella.gui.LocalClientInfoFactoryImpl" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="menu" pattern="main.com.limegroup.gnutella.gui.menu.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="options" pattern="main.com.limegroup.gnutella.gui.options.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SendFeedbackDialog" pattern="main.com.limegroup.gnutella.gui.SendFeedbackDialog" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="bugs" pattern="main.com.limegroup.gnutella.gui.bugs.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="CheckBoxListPanel" pattern="main.com.limegroup.gnutella.gui.CheckBoxListPanel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LanguageWindow" pattern="main.com.limegroup.gnutella.gui.LanguageWindow" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="search" pattern="main.com.limegroup.gnutella.gui.search.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="VPNStatusButton" pattern="main.com.limegroup.gnutella.gui.VPNStatusButton" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="AboutWindow" pattern="main.com.limegroup.gnutella.gui.AboutWindow" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="actions" pattern="main.com.limegroup.gnutella.gui.actions.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="CheckBoxList" pattern="main.com.limegroup.gnutella.gui.CheckBoxList" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SplashWindow" pattern="main.com.limegroup.gnutella.gui.SplashWindow" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="StatusLine" pattern="main.com.limegroup.gnutella.gui.StatusLine" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="VPNDropGuard" pattern="main.com.limegroup.gnutella.gui.VPNDropGuard" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="IconManager" pattern="main.com.limegroup.gnutella.gui.IconManager" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LanguageUtils" pattern="main.com.limegroup.gnutella.gui.LanguageUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ListEditor" pattern="main.com.limegroup.gnutella.gui.ListEditor" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LogoPanel" pattern="main.com.limegroup.gnutella.gui.LogoPanel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SizedTextField" pattern="main.com.limegroup.gnutella.gui.SizedTextField" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SizedWholeNumberField" pattern="main.com.limegroup.gnutella.gui.SizedWholeNumberField" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="StatusComponent" pattern="main.com.limegroup.gnutella.gui.StatusComponent" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="tables" pattern="main.com.limegroup.gnutella.gui.tables.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TipOfTheDayMediator" pattern="main.com.limegroup.gnutella.gui.TipOfTheDayMediator" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="URLLabel" pattern="main.com.limegroup.gnutella.gui.URLLabel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="util" pattern="main.com.limegroup.gnutella.gui.util.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="VPNBitTorrentDisabledWarningLabel" pattern="main.com.limegroup.gnutella.gui.VPNBitTorrentDisabledWarningLabel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="DonationButtons" pattern="main.com.limegroup.gnutella.gui.DonationButtons" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="FileChooserHandler" pattern="main.com.limegroup.gnutella.gui.FileChooserHandler" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="GUIUtils" pattern="main.com.limegroup.gnutella.gui.GUIUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="GURLHandler" pattern="main.com.limegroup.gnutella.gui.GURLHandler" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LanguageFlagFactory" pattern="main.com.limegroup.gnutella.gui.LanguageFlagFactory" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MacEventHandler" pattern="main.com.limegroup.gnutella.gui.MacEventHandler" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MediaButton" pattern="main.com.limegroup.gnutella.gui.MediaButton" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MessageHandler" pattern="main.com.limegroup.gnutella.gui.MessageHandler" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="NativeFileIconController" pattern="main.com.limegroup.gnutella.gui.NativeFileIconController" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="notify" pattern="main.com.limegroup.gnutella.gui.notify.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ShutdownWindow" pattern="main.com.limegroup.gnutella.gui.ShutdownWindow" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="VPNStatusRefresher" pattern="main.com.limegroup.gnutella.gui.VPNStatusRefresher" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="GUIMediator" pattern="main.com.limegroup.gnutella.gui.GUIMediator" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LimeWireModule" pattern="main.com.limegroup.gnutella.gui.LimeWireModule" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="ButtonIconController" pattern="main.com.limegroup.gnutella.gui.ButtonIconController" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ButtonRow" pattern="main.com.limegroup.gnutella.gui.ButtonRow" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="FramedDialog" pattern="main.com.limegroup.gnutella.gui.FramedDialog" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="iTunesMediator" pattern="main.com.limegroup.gnutella.gui.iTunesMediator" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LabeledTextField" pattern="main.com.limegroup.gnutella.gui.LabeledTextField" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LimeWireGUIModule" pattern="main.com.limegroup.gnutella.gui.LimeWireGUIModule" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MessageService" pattern="main.com.limegroup.gnutella.gui.MessageService" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SettingsWarningManager" pattern="main.com.limegroup.gnutella.gui.SettingsWarningManager" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="shell" pattern="main.com.limegroup.gnutella.gui.shell.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="WholeNumberField" pattern="main.com.limegroup.gnutella.gui.WholeNumberField" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="DialogOption" pattern="main.com.limegroup.gnutella.gui.DialogOption" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="FirewallUtils" pattern="main.com.limegroup.gnutella.gui.FirewallUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="IconButton" pattern="main.com.limegroup.gnutella.gui.IconButton" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LabeledComponent" pattern="main.com.limegroup.gnutella.gui.LabeledComponent" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LimeJFrame" pattern="main.com.limegroup.gnutella.gui.LimeJFrame" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LimeTextField" pattern="main.com.limegroup.gnutella.gui.LimeTextField" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LimeWireGUI" pattern="main.com.limegroup.gnutella.gui.LimeWireGUI" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="Main" pattern="main.com.limegroup.gnutella.gui.Main" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ResourceManager" pattern="main.com.limegroup.gnutella.gui.ResourceManager" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TipOfTheDayMessages" pattern="main.com.limegroup.gnutella.gui.TipOfTheDayMessages" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TitledPaddedPanel" pattern="main.com.limegroup.gnutella.gui.TitledPaddedPanel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="AWTSplashWindow" pattern="main.com.limegroup.gnutella.gui.AWTSplashWindow" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="BoxPanel" pattern="main.com.limegroup.gnutella.gui.BoxPanel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="DefaultErrorCatcher" pattern="main.com.limegroup.gnutella.gui.DefaultErrorCatcher" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="FileIconController" pattern="main.com.limegroup.gnutella.gui.FileIconController" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="GUIConstants" pattern="main.com.limegroup.gnutella.gui.GUIConstants" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="HTMLLabel" pattern="main.com.limegroup.gnutella.gui.HTMLLabel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="I18n" pattern="main.com.limegroup.gnutella.gui.I18n" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ImageManipulator" pattern="main.com.limegroup.gnutella.gui.ImageManipulator" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LimeJProgressBar" pattern="main.com.limegroup.gnutella.gui.LimeJProgressBar" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="Line" pattern="main.com.limegroup.gnutella.gui.Line" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LocalClientInfoFactory" pattern="main.com.limegroup.gnutella.gui.LocalClientInfoFactory" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MPlayerMediator" pattern="main.com.limegroup.gnutella.gui.MPlayerMediator" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MultiLineLabel" pattern="main.com.limegroup.gnutella.gui.MultiLineLabel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="MultilineToolTip" pattern="main.com.limegroup.gnutella.gui.MultilineToolTip" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="PaddedPanel" pattern="main.com.limegroup.gnutella.gui.PaddedPanel" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="RefreshListener" pattern="main.com.limegroup.gnutella.gui.RefreshListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="RefreshTimer" pattern="main.com.limegroup.gnutella.gui.RefreshTimer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="ScrollingTextPane" pattern="main.com.limegroup.gnutella.gui.ScrollingTextPane" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="SeperatorBorder" pattern="main.com.limegroup.gnutella.gui.SeperatorBorder" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="TorrentFileFilter" pattern="main.com.limegroup.gnutella.gui.TorrentFileFilter" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="trees" pattern="main.com.limegroup.gnutella.gui.trees.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="VPNs" pattern="main.com.limegroup.gnutella.gui.VPNs" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="WindowsUtils" pattern="main.com.limegroup.gnutella.gui.WindowsUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                      </grid>
+                    </cell>
+                    <cell name="Gnutella core" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+                      <grid>
+                        <row>
+                          <cell name="LimeWireCoreModule" pattern="main.com.limegroup.gnutella.LimeWireCoreModule" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="DownloadManagerImpl" pattern="main.com.limegroup.gnutella.DownloadManagerImpl" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="DownloadManager" pattern="main.com.limegroup.gnutella.DownloadManager" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="LimeCoreGlue" pattern="main.com.limegroup.gnutella.LimeCoreGlue" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LimeWireCore" pattern="main.com.limegroup.gnutella.LimeWireCore" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="LifecycleManager" pattern="main.com.limegroup.gnutella.LifecycleManager" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                          <cell name="LifecycleManagerImpl" pattern="main.com.limegroup.gnutella.LifecycleManagerImpl" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="MagnetOptions" pattern="main.com.limegroup.gnutella.MagnetOptions" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="ExternalControl" pattern="main.com.limegroup.gnutella.ExternalControl" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="ActivityCallback" pattern="main.com.limegroup.gnutella.ActivityCallback" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                        <row>
+                          <cell name="MediaType" pattern="main.com.limegroup.gnutella.MediaType" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                        </row>
+                      </grid>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell name="settings" pattern="main.com.limegroup.gnutella.settings.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="util" pattern="main.com.limegroup.gnutella.util.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <row>
+        <cell name="Database" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="content" pattern="main.com.frostwire.content.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="database" pattern="main.com.frostwire.database.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+        <cell name="Searching torrents" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="search" pattern="main.com.frostwire.search.*" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="tests" pattern="main.com.frostwire.tests.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+          </grid>
+        </cell>
+        <cell name="Torrenting library" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="transfers" pattern="main.com.frostwire.transfers.?" vexpanded="false" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="SoundcloudDownload" pattern="main.com.frostwire.transfers.SoundcloudDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="HttpDownload" pattern="main.com.frostwire.transfers.HttpDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="BaseHttpDownload" pattern="main.com.frostwire.transfers.BaseHttpDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="BittorrentDownload" pattern="main.com.frostwire.transfers.BittorrentDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="Transfer" pattern="main.com.frostwire.transfers.Transfer" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="SpeedStat" pattern="main.com.frostwire.transfers.SpeedStat" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="TransferItem" pattern="main.com.frostwire.transfers.TransferItem" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="TransferState" pattern="main.com.frostwire.transfers.TransferState" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+            <row>
+              <cell name="bittorrent" pattern="main.com.frostwire.bittorrent.?" vexpanded="false" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="BTEngineAdapter" pattern="main.com.frostwire.bittorrent.BTEngineAdapter" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="BTEngineListener" pattern="main.com.frostwire.bittorrent.BTEngineListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="BTEngine" pattern="main.com.frostwire.bittorrent.BTEngine" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="BTDownload" pattern="main.com.frostwire.bittorrent.BTDownload" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="BTInfoAdditionalMetadataHolder" pattern="main.com.frostwire.bittorrent.BTInfoAdditionalMetadataHolder" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="CopyrightLicenseBroker" pattern="main.com.frostwire.bittorrent.CopyrightLicenseBroker" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="PaymentOptions" pattern="main.com.frostwire.bittorrent.PaymentOptions" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="BTContext" pattern="main.com.frostwire.bittorrent.BTContext" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="BTDownloadItem" pattern="main.com.frostwire.bittorrent.BTDownloadItem" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="BTDownloadListener" pattern="main.com.frostwire.bittorrent.BTDownloadListener" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="Mappable" pattern="main.com.frostwire.bittorrent.Mappable" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <row>
+        <cell name="Utilities" pattern="" vexpanded="true" illegal="false" visibility="public" drill="true">
+          <grid>
+            <row>
+              <cell name="regex" pattern="main.com.frostwire.regex.?" vexpanded="false" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="Matcher" pattern="main.com.frostwire.regex.Matcher" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="Pattern" pattern="main.com.frostwire.regex.Pattern" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="GroupInfo" pattern="main.com.frostwire.regex.GroupInfo" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+            <row>
+              <cell name="util" pattern="main.com.frostwire.util.*" vexpanded="false" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="HttpClientFactory" pattern="main.com.frostwire.util.HttpClientFactory" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="http" pattern="main.com.frostwire.util.http.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="ZipUtils" pattern="main.com.frostwire.util.ZipUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="filetypes" pattern="main.com.frostwire.util.filetypes.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="Hex" pattern="main.com.frostwire.util.Hex" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="HistoHashMap" pattern="main.com.frostwire.util.HistoHashMap" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="HtmlManipulator" pattern="main.com.frostwire.util.HtmlManipulator" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="JsonUtils" pattern="main.com.frostwire.util.JsonUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="Logger" pattern="main.com.frostwire.util.Logger" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="MimeDetector" pattern="main.com.frostwire.util.MimeDetector" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="Ref" pattern="main.com.frostwire.util.Ref" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="Ssl" pattern="main.com.frostwire.util.Ssl" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="StringUtils" pattern="main.com.frostwire.util.StringUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="ThreadPool" pattern="main.com.frostwire.util.ThreadPool" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="UrlUtils" pattern="main.com.frostwire.util.UrlUtils" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="UserAgentGenerator" pattern="main.com.frostwire.util.UserAgentGenerator" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+            <row>
+              <cell name="platform" pattern="main.com.frostwire.platform.?" vexpanded="false" illegal="false" visibility="public" drill="true" />
+            </row>
+            <row>
+              <cell name="desktop" pattern="main.com.frostwire.desktop.?" vexpanded="false" illegal="false" visibility="public" drill="true">
+                <grid>
+                  <row>
+                    <cell name="DesktopPlatform" pattern="main.com.frostwire.desktop.DesktopPlatform" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                  <row>
+                    <cell name="DesktopPaths" pattern="main.com.frostwire.desktop.DesktopPaths" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="DesktopSettings" pattern="main.com.frostwire.desktop.DesktopSettings" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                    <cell name="DesktopVPNMonitor" pattern="main.com.frostwire.desktop.DesktopVPNMonitor" vexpanded="false" illegal="false" visibility="public" drill="true" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <description>Subsystem breakout for 'main.com.frostwire'</description>
+    </grid>
+  </grid-set>
+</local-project>
